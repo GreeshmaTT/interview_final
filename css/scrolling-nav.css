@@ -1,0 +1,139 @@
+/*--------------------------------------------
+   FONTS
+   -------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
+/* ----------------------------------------
+ GENERAL
+------------------------------------------ */
+.main{
+  margin:0;
+  border:0;
+  font-family: 'Noto Sans SC', sans-serif;
+  box-sizing: border-box;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.content{
+    width:95%;
+    height:auto;
+    padding: 10px;
+    background:#212121;
+    margin:40px auto;
+}
+.sub-head .main-text{
+  font-family: 'Bebas Neue', cursive;
+}
+.sub-head{
+  font-size: 1.4em;
+  color:#c70062;
+  margin:20px 20px;
+}
+.sub-head:before{
+  content: "Q. ";
+  font-weight: bold;
+  color: #772583;
+  font-size: 40px;
+}
+.lead{
+  font-size: 1em;
+  padding: 10px 20px 10px 20px;
+  margin:20px 30px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: white;
+}
+.alter{
+  background: gray;
+}
+/* ----------------------------------------
+  HEADER START
+------------------------------------------ */
+
+.emi-image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px auto 20px;
+  display: block;
+  object-fit: cover;
+  object-position: center right;
+  box-shadow: 0 0 10px 5px #7d6f80;
+}
+.main-text{
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #772583;
+}
+.rule {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+/* ----------------------------------------
+  HEADER END
+------------------------------------------ */
+
+
+/*-----------------------------------------
+ ANIMATION and OTHER EFFECTS
+ -------------------- */
+/* Box shadow */
+
+.effect {
+  position: relative;
+}
+.effect:before, .effect:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect:after {
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+/* typing effect */
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .3s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: transparent;; }
+}
