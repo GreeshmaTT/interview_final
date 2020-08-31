@@ -84,9 +84,8 @@
 }
 
 .sub-head-question{
-  font-size: 1.6em;
+  font-size: 17px;
   color :#772583;
-  margin:10px;
   text-align-last: center;
   text-transform: uppercase;
 }
@@ -98,7 +97,7 @@
 }
 
 .interview-answer{
-  font-size: 1.2em;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -115,6 +114,7 @@ MEDIA QUERIES
   .interview-main-container{
     font-size: 10px;
   }
+
 }
 
 @media (max-width: 770px) {
@@ -127,4 +127,5 @@ MEDIA QUERIES
   .interview-main-container{
     font-size: 8px;
   }
+
 }
